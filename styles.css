@@ -1,0 +1,321 @@
+/* Vibrant Playful Theme for Birthday Invitation */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #FF61A6;
+    --secondary-color: #7B5BE6;
+    --accent1: #FFD166;
+    --accent2: #06D6A0;
+    --accent3: #118AB2;
+    --light-bg: #FFF0F5;
+    --dark-text: #4F3A65;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: linear-gradient(135deg, #FFF0F5 0%, #E6F8FF 100%);
+    margin: 0;
+    padding: 0;
+    color: var(--dark-text);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff90c3' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 
+        0 10px 30px rgba(123, 91, 230, 0.2),
+        0 0 0 15px rgba(255, 97, 166, 0.1),
+        0 0 0 30px rgba(255, 209, 102, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color) 25%, var(--secondary-color) 50%, var(--primary-color) 50%, var(--primary-color) 75%, var(--secondary-color) 75%);
+    background-size: 24px 24px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 10px 0;
+    text-shadow: 
+        3px 3px 0 var(--accent1),
+        -1px -1px 0 var(--accent1),
+        1px -1px 0 var(--accent1),
+        -1px 1px 0 var(--accent1),
+        1px 1px 0 var(--accent1);
+    letter-spacing: 1px;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.balloons {
+    font-size: 2rem;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.balloons:nth-child(1) {
+    animation: float 6s ease-in-out infinite;
+}
+
+.balloons:nth-child(4) {
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+.event-details {
+    background-color: rgba(255, 209, 102, 0.15);
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 15px;
+    position: relative;
+    border: 2px dashed var(--accent1);
+}
+
+.event-details:before {
+    content: "🎉";
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-size: 2.5rem;
+    transform: rotate(-15deg);
+}
+
+.event-details:after {
+    content: "🎉";
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    font-size: 2.5rem;
+    transform: rotate(15deg);
+}
+
+.event-details h2 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: var(--secondary-color);
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.event-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    border-left: 4px solid var(--accent2);
+}
+
+.event-details p:nth-child(odd) {
+    border-left: 4px solid var(--accent3);
+}
+
+.event-details strong {
+    color: var(--secondary-color);
+}
+
+.photo-container {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    background: #f1f1f1;
+}
+
+.photo-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* For very large screens */
+@media screen and (min-width: 1400px) {
+    .photo-container {
+        max-width: 800px;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .photo-container {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+}
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#balloon-container {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.confetti {
+    position: absolute;
+    z-index: 1000;
+    will-change: transform;
+}
+
+.balloon {
+    position: absolute;
+    font-size: 2rem;
+    will-change: transform;
+    z-index: 999;
+}
+
+.map-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    border: 2px dashed var(--accent3);
+    position: relative;
+}
+
+.map-container h3 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.map-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    height: 450px;
+}
+
+.map-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.map-btn {
+    display: inline-block;
+    background-color: var(--accent3);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.map-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.map-btn.toggle-map {
+    background-color: var(--accent2);
+}
+
+.map-container:before {
+    content: "🗺️";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    font-size: 24px;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--accent3);
+    z-index: 1;
+}
+
+.map-wrapper.collapsed {
+    height: 0 !important;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}

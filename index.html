@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anastasiia's Birthday Party!</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png" />
+    <link rel="manifest" href="media/site.webmanifest" />
+
+    <!-- Social Media Sharing -->
+    <meta property="og:title" content="Anastasiia's 30th Birthday Party!" />
+    <meta property="og:description" content="Приєднуйтесь, щоб відсвяткувати цей особливий день разом з нами!" />
+    <meta property="og:image" content="media/og-image.jpg" />
+    <meta property="og:url" content="https://shubhshackyard.github.io/birthdayInvitation" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="balloons">🎂🎂🎂</div>
+        <h1>Anastasiia's 30th Birthday Party!</h1>
+
+        <div class="photo-container">
+          <img id="partyPhoto" src="media/photo.jpg" alt="Anastasiia's Birthday Photo" width="100%" height="auto" />
+        </div>
+
+        <p>Приєднуйтесь, щоб відсвяткувати цей особливий день разом з нами!</p>
+        <div class="balloons">🎂🎁🎂</div>
+      </header>
+
+      <div class="event-details">
+        <h2>Деталі вечірки</h2>
+        <p><strong>Дата:</strong> Субота, 31 жовтня 2026</p>
+        <p><strong>Час:</strong> 16:00 - 22:00</p>
+        <p><strong>Місце проведення:</strong> м. Рівне, готельно-ресторанний комплекс "Софія"</p>
+
+        <div class="map-container">
+          <h3>Адреса локації</h3>
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps?q=50.59012709584098,26.15235924929123&output=embed" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map-buttons">
+            <a href="https://www.google.com/maps?q=50.59012709584098,26.15235924929123" target="_blank" class="map-btn">Open in Google Maps</a>
+            <button class="map-btn toggle-map">Hide Map</button>
+          </div>
+        </div>
+
+        <p>Візьміть з собою гарний настрій та зручне взуття, оскільки ми будемо багато танцювати!</p>
+      </div>
+    </div>
+
+    <div id="confetti-container"></div>
+    <div id="balloon-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
