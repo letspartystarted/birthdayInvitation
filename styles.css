@@ -1,5 +1,5 @@
 /* Vibrant Playful Theme for Birthday Invitation */
-@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:wght@400;700&display=swap');
 
 :root {
     --primary-color: #FF61A6;
@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Comic Neue';
+    font-family: 'Open Sans', sans-serif;
     background: linear-gradient(135deg, #FFF0F5 0%, #E6F8FF 100%);
     margin: 0;
     padding: 0;
@@ -132,7 +132,7 @@ header p {
 }
 
 .event-details h2 {
-    font-family: 'Bubblegum Sans';
+    font-family: 'Open Sans', sans-serif;
     color: var(--secondary-color);
     margin-top: 0;
     font-size: 2rem;
@@ -231,7 +231,7 @@ header p {
 }
 
 .map-container h3 {
-    font-family: 'Bubblegum Sans';
+    font-family: 'Open Sans', sans-serif;
     color: var(--secondary-color);
     margin-top: 0;
     margin-bottom: 15px;
@@ -272,7 +272,7 @@ header p {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Comic Neue';
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
