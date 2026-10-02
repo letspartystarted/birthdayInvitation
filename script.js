@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function updateMapToggleText(button, isCollapsed) {
-    button.textContent = isCollapsed ? 'Show Map' : 'Hide Map';
+    button.textContent = isCollapsed ? 'Показати карту' : 'Сховати карту';
 }
 
 function launchConfetti() {
